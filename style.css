@@ -77,25 +77,50 @@ textarea{
     flex: 1;
     height: 60px;
     border-bottom: 2px solid black;
-    background-color: red;
+    background-color: rgb(241, 91, 91);
     padding: 20px;
     border-width: 2px;
+    display: flex;
+    flex-direction: row;
 }
 
 .timeSlotPresent {
     flex: 1;
     height: 60px;
     border-bottom: 2px solid black;
-    background-color:blue;
+    background-color:rgb(54, 118, 214);
     padding: 20px;
     border-width: 2px;
+    display: flex;
+    flex-direction: row;
 }
 
 .timeSlotFuture {
     flex: 1;
     height: 60px;
     border-bottom: 2px solid black;
-    background-color:green;
+    background-color:rgb(123, 219, 123);
     padding: 20px;
     border-width: 2px;
+    display: flex;
+    flex-direction: row;
+}
+.inputPast {
+    background-color: rgb(241, 91, 91);
+    flex: 1;
+}
+
+.inputPresent {
+    background-color:rgb(54, 118, 214);
+    flex: 1;
+}
+
+.inputFuture {
+    background-color:rgb(123, 219, 123);
+    flex: 1;
+}
+
+.dateDisplay {
+    width: 60px;
+    height: 60px;
 }

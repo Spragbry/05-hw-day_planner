@@ -26,7 +26,22 @@ const createTimeUiElements = () => {
     const timeBlocks = createTimeBlocks()
     timeBlocks.forEach((timeBlock)=>{
         const displayText = timeBlock.format("hh a")
-        $("#container").append(`<div class="timeSlot"><p>${displayText}</p></div>`)
+        const now = moment()
+        let className = null
+        let inputClassName = null
+        const hour = now.get("hour")
+        const blockHour = timeBlock.get("hour")
+        if (hour == blockHour){
+            className = "timeSlotPresent"
+            inputClassName = "inputPresent"
+        } else if (blockHour > hour){
+            className = "timeSlotFuture"
+            inputClassName = "inputFuture"
+        } else {
+            className = "timeSlotPast"
+            inputClassName = "inputPast"
+        }
+        $("#container").append(`<div class=${className}><p class="dateDisplay">${displayText}</p><input class=${inputClassName}></input></div>`)
     })
 }
 
