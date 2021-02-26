@@ -108,19 +108,32 @@ textarea{
 .inputPast {
     background-color: rgb(241, 91, 91);
     flex: 1;
+    min-width: 500px;
 }
 
 .inputPresent {
     background-color:rgb(54, 118, 214);
     flex: 1;
+    min-width: 500px;
 }
 
 .inputFuture {
     background-color:rgb(123, 219, 123);
     flex: 1;
+    min-width: 500px;
 }
 
 .dateDisplay {
     width: 60px;
     height: 60px;
 }
+
+.save {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
