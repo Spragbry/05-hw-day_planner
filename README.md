@@ -8,3 +8,7 @@ The created day planner is a simple calendar application that allows a user to s
 
 
 # Link to deployed application 
+
+https://spragbry.github.io/05-hw-day_planner/
+
+https://github.com/Spragbry/05-hw-day_planner 
