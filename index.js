@@ -24,12 +24,10 @@ const createTimeBlocks = () => {
     return timeBlocks 
 }
 
-
 const saveItem = (index, event) => {
     localStorage.setItem(`${index}-event`, event)
     console.log("saved item at index", `${index}-event`)
 }
-
 
 const loadItems = () => {
     let items = []
@@ -44,8 +42,6 @@ const loadItems = () => {
     console.log("items",items)
     return items
 }
-
-
 
 const createTimeUiElements = () => {
     const timeBlocks = createTimeBlocks()
@@ -82,7 +78,6 @@ const createTimeUiElements = () => {
     })
 }
 
-
 const observeInputs = () => {
     for (let i = 0; i < end - start; ++i){
         const input = $(`#${i}`)
@@ -99,12 +94,6 @@ const observeInputs = () => {
 
 }
 
-
-
-
-
-
-
 $(document).ready(()=>{
     const date = getCurrentDate()
     console.log("document loaded",date)
@@ -113,6 +102,3 @@ $(document).ready(()=>{
     createTimeUiElements()
     observeInputs()
 }) 
-
-
-
